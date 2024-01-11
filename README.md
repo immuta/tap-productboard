@@ -1,2 +1,2 @@
 # tap-productboard
-Tap for the Productboard API
+Tap for the Productboard API - test connection
