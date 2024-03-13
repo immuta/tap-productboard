@@ -6,7 +6,7 @@ environments:
 - name: test
 plugins:
   extractors:
-  - name: "tap-productboardapi"
+  - name: "tap-productboard"
     namespace: "tap_productboardapi"
     pip_url: -e .
     capabilities:
