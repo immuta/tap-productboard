@@ -9,6 +9,9 @@ keywords = [
     "ProductboardAPI",
 ]
 license = "Apache 2.0"
+packages = [
+    { include = "tap_productboardapi" },
+]
 
 [tool.poetry.dependencies]
 python = "<3.12,>=3.7.1"
