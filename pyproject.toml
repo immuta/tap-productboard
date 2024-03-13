@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "tap-productboardapi"
+name = "tap-productboard"
 version = "0.0.1"
 description = "`tap-productboardapi` is a Singer tap for ProductboardAPI, built with the Meltano Singer SDK."
 readme = "README.md"
