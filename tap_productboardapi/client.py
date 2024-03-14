@@ -51,7 +51,7 @@ class ProductboardAPIStream(RESTStream):
             headers["User-Agent"] = self.config.get("user_agent")
         # If not using an authenticator, you may also provide inline auth headers:
         # headers["Private-Token"] = self.config.get("auth_token")
-        headers["Authorization"] = self.config.get("api_key")
+        headers["Authorization"] = self.config.get("api_key").strip()
         headers["X-Version"] = self.config.get("X-Version")
         #headers["pageLimit"] = self.config.get("pageLimit")
         return headers
