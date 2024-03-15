@@ -77,12 +77,12 @@ class ProductboardAPIStream(RESTStream):
             self.next_page_token_jsonpath, response.json()
         )
         first_match = next(iter(all_matches), None)
-        print("first feature match", first_match)
-        print("keys", response.json().keys())
+        #print("first feature match", first_match)
+        #print("keys", response.json().keys())
         #global streamDetect
         if first_match:
             next_page_token = first_match
-            print("class name", self)
+            #print("class name", self)
             #streamDetect = 'feature'
         #if "pageCursor" in response.json().keys():
             #print("test if statement")
@@ -98,8 +98,8 @@ class ProductboardAPIStream(RESTStream):
                 )
                 next_page_token = next(iter(all_notes_matches), None)
                 #next_page_token = response.json().pageCursor
-                print("check token 1", next_page_token)
-                print("class name", self.name)
+                #print("check token 1", next_page_token)
+                #print("class name", self.name)
                 #next_page_token = next_page_token.replace("=","%3D", 1)
                 #streamDetect = 'note'
             else:
@@ -130,17 +130,17 @@ class ProductboardAPIStream(RESTStream):
             A dictionary of URL query parameters.
         """
         params: dict = {}
-        print("next page token", next_page_token)
+        #print("next page token", next_page_token)
         if next_page_token:
             param_match = re.search("pageCursor=([^&]*)", next_page_token)
             if param_match:
                 pageCursormatch = param_match.group(1)
             else:
-                print("got here")
+                #print("got here")
                 pageCursormatch = next_page_token
                 #print("got here 2")
             params["pageCursor"] = pageCursormatch
-            print("parameter", pageCursormatch)
+            #print("parameter", pageCursormatch)
         if self.replication_key:
             params["sort"] = "asc"
             params["order_by"] = self.replication_key
