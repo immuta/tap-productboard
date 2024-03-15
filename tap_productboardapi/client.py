@@ -113,7 +113,8 @@ class ProductboardAPIStream(RESTStream):
         #runtimeCounter = runtimeCounter + 1
         #if runtimeCounter > 3:
         #    exit
-        return next_page_token
+        #return next_page_token
+        return None
 
     def get_url_params(
         self,
