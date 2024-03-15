@@ -139,7 +139,7 @@ class ProductboardAPIStream(RESTStream):
                 #print("got here")
                 pageCursormatch = next_page_token
                 #print("got here 2")
-            params["page"] = pageCursormatch
+            params["pageCursor"] = pageCursormatch
             #print("parameter", pageCursormatch)
         if self.replication_key:
             params["sort"] = "asc"
