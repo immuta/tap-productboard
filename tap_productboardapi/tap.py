@@ -45,9 +45,9 @@ class TapProductboardAPI(Tap):
             A list of discovered streams.
         """
         return [
-            streams.FeatureStream(self),
-            streams.FeatureStatusStream(self)
-            #streams.NoteStream(self)
+            #streams.FeatureStream(self),
+            streams.FeatureStatusStream(self),
+            streams.NoteStream(self)
         ]
 
 
