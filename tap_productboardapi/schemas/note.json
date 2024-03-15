@@ -10,20 +10,24 @@
       "displayUrl": {"type": ["null", "string"]},
       "tags": {"type": ["null", "string"]},
       "company": {
+        "type": "object",
         "id": {"type": ["null", "string"]}
       },
       "features": {"type": ["null", "string"]},
       "followers": {"type": ["null", "string"]},
       "owner": {
+        "type": "object",
         "name": {"type": ["null", "string"]},
         "email": {"type": ["null", "string"]}
       },
       "source": {
+        "type": "object",
         "origin": {"type": ["null", "string"]},
         "record_id": {"type": ["null", "string"]}
       },
       "user": {"type": ["null", "string"]},
       "createdBy": {
+        "type": "object",
         "id": {"type": ["null", "string"]},
         "name": {"type": ["null", "string"]},
         "email": {"type": ["null", "string"]}
