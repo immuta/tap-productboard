@@ -46,8 +46,8 @@ class TapProductboardAPI(Tap):
         """
         return [
             streams.FeatureStream(self),
-            streams.FeatureStatusStream(self),
-            streams.NoteStream(self)
+            streams.FeatureStatusStream(self)
+            #streams.NoteStream(self)
         ]
 
 
