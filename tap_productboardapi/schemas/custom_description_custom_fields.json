@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "customField": {
+            "type": "object",
+            "id": {"type": ["null", "string"]}
+        },
+        "hierarchyEntity": {
+            "type": "object",
+            "id": {"type": ["null", "string"]},
+            "'type'": {"type": ["null", "string"]}
+        },
+        "links": {
+            "type": "object",
+            "self": {"type": ["null", "string"]}
+        },
+        "value": {"type": ["null","string"]},
+        "type": {"type": ["null", "string"]}
+    }
+  }
