@@ -52,7 +52,13 @@ class TapProductboardAPI(Tap):
             streams.NumberCustomFieldsStream(self),
             streams.DropdownCustomFieldsStream(self),
             streams.MultiDropdownCustomFieldsStream(self),
-            streams.MemberCustomFieldsStream(self)
+            streams.MemberCustomFieldsStream(self),
+            streams.MemberCustomFieldNamesStream(self),
+            streams.MultiDropdownCustomFieldNamesStream(self),
+            streams.DropdownCustomFieldNamesStream(self),
+            streams.NumberCustomFieldNamesStream(self),
+            streams.CustomDescriptionCustomFieldNamesStream(self),
+            streams.TextCustomFieldNamesStream(self)
             #streams.NoteStream(self)
         ]
 
