@@ -75,3 +75,45 @@ class MemberCustomFieldsStream(ProductboardAPIStream):
     primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "member_custom_fields.json"
+
+class MemberCustomFieldNamesStream(ProductboardAPIStream):
+    name = "member_custom_field_names"
+    path = "/hierarchy-entities/custom-fields"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "member_custom_field_names.json"
+
+class MultiDropdownCustomFieldNamesStream(ProductboardAPIStream):
+    name = "multi_dropdown_custom_field_names"
+    path = "/hierarchy-entities/custom-fields"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "multi_dropdown_custom_field_names.json"
+
+class DropdownCustomFieldNamesStream(ProductboardAPIStream):
+    name = "dropdown_custom_field_names"
+    path = "/hierarchy-entities/custom-fields"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "dropdown_custom_field_names.json"
+
+class NumberCustomFieldNamesStream(ProductboardAPIStream):
+    name = "number_custom_field_names"
+    path = "/hierarchy-entities/custom-fields"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "number_custom_field_names.json"
+
+class CustomDescriptionCustomFieldNamesStream(ProductboardAPIStream):
+    name = "custom_description_custom_field_names"
+    path = "/hierarchy-entities/custom-fields"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "custom_description_custom_field_names.json"
+
+class TextCustomFieldNamesStream(ProductboardAPIStream):
+    name = "text_custom_field_names"
+    path = "/hierarchy-entities/custom-fields"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "text_custom_field_names.json"
