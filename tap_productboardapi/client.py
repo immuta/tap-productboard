@@ -148,17 +148,17 @@ class ProductboardAPIStream(RESTStream):
         #print('stream Detect', streamDetect)
         #if self.name == 'note':
         #    params["pageLimit"] = '2000'
-        if self.name == 'text_custom_fields':
+        if self.name == 'text_custom_fields' or self.name == 'text_custom_field_names':
             params["type"] = 'text'
-        if self.name == 'custom_description_custom_fields':
+        if self.name == 'custom_description_custom_fields' or self.name == 'custom_description_custom_field_names':
             params["type"] = 'custom-description'
-        if self.name == 'number_custom_fields':
+        if self.name == 'number_custom_fields' or self.name == 'number_custom_field_names':
             params["type"] = 'number'
-        if self.name == 'dropdown_custom_fields':
+        if self.name == 'dropdown_custom_fields' or self.name == 'dropdown_custom_field_names':
             params["type"] = 'dropdown'
-        if self.name == 'multi_dropdown_custom_fields':
+        if self.name == 'multi_dropdown_custom_fields' or self.name == 'multi_dropdown_custom_field_names':
             params["type"] = 'multi-dropdown'
-        if self.name == 'member_custom_fields':
+        if self.name == 'member_custom_fields' or self.name == 'member_custom_field_names':
             params["type"] = 'member'
         return params
 
