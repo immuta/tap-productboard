@@ -146,8 +146,20 @@ class ProductboardAPIStream(RESTStream):
             params["order_by"] = self.replication_key
         #print("got here") 
         #print('stream Detect', streamDetect)
-        if self.name == 'note':
-            params["pageLimit"] = '2000'
+        #if self.name == 'note':
+        #    params["pageLimit"] = '2000'
+        if self.name == 'text_custom_fields':
+            params["type"] = 'text'
+        if self.name == 'custom_description_custom_fields':
+            params["type"] = 'custom-description'
+        if self.name == 'number_custom_fields':
+            params["type"] = 'number'
+        if self.name == 'dropdown_custom_fields':
+            params["type"] = 'dropdown'
+        if self.name == 'multi_dropdown_custom_fields':
+            params["type"] = 'multi-dropdown'
+        if self.name == 'member_custom_fields':
+            params["type"] = 'member'
         return params
 
     #def prepare_request_payload(
