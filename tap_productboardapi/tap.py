@@ -46,7 +46,13 @@ class TapProductboardAPI(Tap):
         """
         return [
             streams.FeatureStream(self),
-            streams.FeatureStatusStream(self)
+            streams.FeatureStatusStream(self),
+            streams.TextCustomFieldsStream(self),
+            streams.CustomDescriptionCustomFieldsStream(self),
+            streams.NumberCustomFieldsStream(self),
+            streams.DropdownCustomFieldsStream(self),
+            streams.MultiDropdownCustomFieldsStream(self),
+            streams.MemberCustomFieldsStream(self)
             #streams.NoteStream(self)
         ]
 
