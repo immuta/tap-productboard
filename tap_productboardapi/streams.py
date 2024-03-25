@@ -37,41 +37,41 @@ class NoteStream(ProductboardAPIStream):
 class TextCustomFieldsStream(ProductboardAPIStream):
     name = "text_custom_fields"
     path = "/hierarchy-entities/custom-fields-values"
-    primary_keys = ["id"]
+    primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "text_custom_fields.json"
 
 class CustomDescriptionCustomFieldsStream(ProductboardAPIStream):
     name = "custom_description_custom_fields"
     path = "/hierarchy-entities/custom-fields-values"
-    primary_keys = ["id"]
+    primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "custom_description_custom_fields.json"
 
 class NumberCustomFieldsStream(ProductboardAPIStream):
     name = "number_custom_fields"
     path = "/hierarchy-entities/custom-fields-values"
-    primary_keys = ["id"]
+    primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "number_custom_fields.json"
 
 class DropdownCustomFieldsStream(ProductboardAPIStream):
     name = "dropdown_custom_fields"
     path = "/hierarchy-entities/custom-fields-values"
-    primary_keys = ["id"]
+    primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "dropdown_custom_fields.json"
 
 class MultiDropdownCustomFieldsStream(ProductboardAPIStream):
     name = "multi_dropdown_custom_fields"
     path = "/hierarchy-entities/custom-fields-values"
-    primary_keys = ["id"]
+    primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "multi_dropdown_custom_fields.json"
 
 class MemberCustomFieldsStream(ProductboardAPIStream):
     name = "member_custom_fields"
     path = "/hierarchy-entities/custom-fields-values"
-    primary_keys = ["id"]
+    primary_keys = ["value"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "member_custom_fields.json"
