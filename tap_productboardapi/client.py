@@ -131,16 +131,19 @@ class ProductboardAPIStream(RESTStream):
         """
         params: dict = {}
         #print("next page token", next_page_token)
-        if next_page_token:
-            param_match = re.search("pageCursor=([^&]*)", next_page_token)
-            if param_match:
-                pageCursormatch = param_match.group(1)
-            else:
-                #print("got here")
-                pageCursormatch = next_page_token
-                #print("got here 2")
-            params["pageCursor"] = pageCursormatch
-            #print("parameter", pageCursormatch)
+        if self.name == 'note':
+            params["pageCursor"] = next_page_token
+        else: 
+            if next_page_token:
+                param_match = re.search("pageCursor=([^&]*)", next_page_token)
+                if param_match:
+                    pageCursormatch = param_match.group(1)
+                else:
+                    #print("got here")
+                    pageCursormatch = next_page_token
+                    #print("got here 2")
+                params["pageCursor"] = pageCursormatch
+                #print("parameter", pageCursormatch)
         if self.replication_key:
             params["sort"] = "asc"
             params["order_by"] = self.replication_key
