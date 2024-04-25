@@ -117,3 +117,17 @@ class TextCustomFieldNamesStream(ProductboardAPIStream):
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "text_custom_field_names.json"
+
+class UserStream(ProductboardAPIStream):
+    name = "user"
+    path = "/users"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "user.json"
+
+class CompanyStream(ProductboardAPIStream):
+    name = "company"
+    path = "/companies"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "company.json"

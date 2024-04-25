@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {"type": "string"},
+      "name": {"type": ["null", "string"]},
+      "domain": {"type": ["null", "string"]},
+      "description": {"type": ["null", "string"]}
+    }
+  }
+

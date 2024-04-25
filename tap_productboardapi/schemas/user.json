@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {"type": "string"},
+      "name": {"type": ["null", "string"]},
+      "email": {"type": ["null", "string"]},
+      "externalId": {"type": ["null", "string"]},
+      "companyId": {"type": ["null", "string"]}
+    }
+  }
+
