@@ -131,3 +131,17 @@ class CompanyStream(ProductboardAPIStream):
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "company.json"
+
+class ProductStream(ProductboardAPIStream):
+    name = "product"
+    path = "/products"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "product.json"
+
+class ComponentStream(ProductboardAPIStream):
+    name = "component"
+    path = "/components"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "component.json"

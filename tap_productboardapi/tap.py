@@ -61,7 +61,9 @@ class TapProductboardAPI(Tap):
             streams.TextCustomFieldNamesStream(self),
             streams.NoteStream(self),
             streams.UserStream(self),
-            streams.CompanyStream(self)
+            streams.CompanyStream(self),
+            streams.ProductStream(self),
+            streams.ComponentStream(self)
         ]
 
 
