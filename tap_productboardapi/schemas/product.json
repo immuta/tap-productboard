@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {"type": "string"},
+      "name": {"type": ["null", "string"]},
+      "description": {"type": ["null", "string"]},
+      "links": {
+        "self": {"type": ["null", "string"]},
+        "html": {"type": ["null", "string"]}
+      },
+      "owner": {
+        "email": {"type": ["null", "string"]}
+      },
+      "createdAt": {"type": ["null", "string"], "format": "date-time"},
+      "updatedAt": {"type": ["null", "string"], "format": "date-time"}
+    }
+  }
+
