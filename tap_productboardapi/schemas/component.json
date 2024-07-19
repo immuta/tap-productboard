@@ -5,10 +5,12 @@
       "name": {"type": ["null", "string"]},
       "description": {"type": ["null", "string"]},
       "links": {
+        "type": "object",
         "self": {"type": ["null", "string"]},
         "html": {"type": ["null", "string"]}
       },
       "parent": {
+        "type": "object",
         "product": {
             "id": {"type": ["null", "string"]},
             "links": {
@@ -18,6 +20,7 @@
         } 
       },
       "owner": {
+        "type": "object",
         "email": {"type": ["null", "string"]}
       },
       "createdAt": {"type": ["null", "string"], "format": "date-time"},
