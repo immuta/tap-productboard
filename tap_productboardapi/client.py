@@ -133,6 +133,11 @@ class ProductboardAPIStream(RESTStream):
         #print("next page token", next_page_token)
         if self.name == 'note':
             params["pageCursor"] = next_page_token
+        if self.name == 'component':
+            if next_page_token:
+                param_match = re.search("pageOffset=([^&]*)", next_page_token)
+                if param_match:
+                    params["pageOffset"] = param_match.group(1)
         else: 
             if next_page_token:
                 param_match = re.search("pageCursor=([^&]*)", next_page_token)
